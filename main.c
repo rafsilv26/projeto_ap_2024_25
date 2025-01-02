@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Protótipos das funções
+// Protótipos dos culhoes AHAHAHAHAHAHAHAHAHAHAHAH
 void configuracaoInicial();
 void gestaoEstudantes();
 void consultasListagens();
@@ -35,7 +35,7 @@ void menu() {
 <<<<<<< HEAD
     printf("1. Configuração Inicial\n");
 =======
-    printf("1. Configuração Inicial3333333333333333\n");
+    printf("1. Configuração Inicial\n");
     printf("   1.1. Especificar número máximo de registos ou configurar alocação dinâmica\n");
     printf("   1.2. Carregar ficheiros de dados para memória\n");
     printf("   1.3. Guardar a configuração inicial em ficheiros\n");
