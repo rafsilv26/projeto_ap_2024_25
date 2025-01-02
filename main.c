@@ -1,10 +1,18 @@
-
-#include <stdio.h>
-#include "file_utils.c"
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
+// Protótipos das funções
+void configuracaoInicial();
+void gestaoEstudantes();
+void consultasListagens();
+void calculoEstatisticas();
+void persistenciaDados();
+void funcionalidadesExtras();
+void exportacaoDados();
+void sairAplicacao();
+
+// Função para exibir o menu principal
 void menu() {
     printf("\n================ MENU PRINCIPAL ================\n");
     printf("1. Configuração Inicial\n");
@@ -42,7 +50,50 @@ void menu() {
     printf("================================================\n");
 }
 
+// Implementação das funções
+void configuracaoInicial() {
+    printf("\nConfiguração Inicial selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void gestaoEstudantes() {
+    printf("\nGestão de Estudantes selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void consultasListagens() {
+    printf("\nConsultas e Listagens selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void calculoEstatisticas() {
+    printf("\nCálculo de Estatísticas selecionado.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void persistenciaDados() {
+    printf("\nPersistência de Dados selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void funcionalidadesExtras() {
+    printf("\nFuncionalidades Extras selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void exportacaoDados() {
+    printf("\nExportação de Dados selecionada.\n");
+    // Adicione aqui a implementação da funcionalidade
+}
+
+void sairAplicacao() {
+    printf("\nSair da aplicação selecionado. Guardar dados...\n");
+    // Adicione aqui a implementação para guardar dados antes de sair
+}
+
 int main() {
+    setlocale(LC_ALL, "pt_PT.utf8"); // Configurar para português de Portugal
+
     int opcao;
 
     do {
@@ -52,36 +103,28 @@ int main() {
 
         switch (opcao) {
             case 1:
-                printf("\nOpção 1: Configuração Inicial selecionada.\n");
-                // Implementar sub-opções 1.1, 1.2, 1.3
+                configuracaoInicial();
                 break;
             case 2:
-                printf("\nOpção 2: Gestão de Estudantes selecionada.\n");
-                // Implementar sub-opções 2.1, 2.2, 2.3
+                gestaoEstudantes();
                 break;
             case 3:
-                printf("\nOpção 3: Consultas e Listagens selecionada.\n");
-                // Implementar sub-opções 3.1, 3.2, 3.3, 3.4
+                consultasListagens();
                 break;
             case 4:
-                printf("\nOpção 4: Cálculo de Estatísticas selecionada.\n");
-                // Implementar sub-opções 4.1, 4.2, 4.3, 4.4, 4.5
+                calculoEstatisticas();
                 break;
             case 5:
-                printf("\nOpção 5: Persistência de Dados selecionada.\n");
-                // Implementar sub-opções 5.1, 5.2
+                persistenciaDados();
                 break;
             case 6:
-                printf("\nOpção 6: Funcionalidades Extras selecionada.\n");
-                // Implementar sub-opções 6.1, 6.2, 6.3
+                funcionalidadesExtras();
                 break;
             case 7:
-                printf("\nOpção 7: Exportação de Dados selecionada.\n");
-                // Implementar sub-opções 7.1, 7.2
+                exportacaoDados();
                 break;
             case 8:
-                printf("\nOpção 8: Sair selecionada.\n");
-                // Implementar sub-opções 8.1, 8.2
+                sairAplicacao();
                 break;
             case 0:
                 printf("\nA encerrar a aplicação...\n");
