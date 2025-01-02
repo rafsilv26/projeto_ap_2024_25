@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+
+#include <stdio.h>
+#include "file_utils.c"
+
+
+>>>>>>> 12a806f9d4270db1c607e56c59a385532652387d
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -24,7 +32,14 @@ void submenuExportacaoDados();
 // Função para exibir o menu principal
 void menu() {
     printf("\n================ MENU PRINCIPAL ================\n");
+<<<<<<< HEAD
     printf("1. Configuração Inicial\n");
+=======
+    printf("1. Configuração Inicial3333333333333333\n");
+    printf("   1.1. Especificar número máximo de registos ou configurar alocação dinâmica\n");
+    printf("   1.2. Carregar ficheiros de dados para memória\n");
+    printf("   1.3. Guardar a configuração inicial em ficheiros\n");
+>>>>>>> 12a806f9d4270db1c607e56c59a385532652387d
     printf("2. Gestão de Estudantes\n");
     printf("3. Consultas e Listagens\n");
     printf("4. Cálculo de Estatísticas\n");
